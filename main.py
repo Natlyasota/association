@@ -3,17 +3,17 @@ os.getcwd()
 list_with_files = ['3.txt', '2.txt', '1.txt']
 
 def read_text():
-    with open('1.txt', 'r') as file:
+    with open('1.txt', 'r', encoding='utf-8') as file:
         first_lines = file.readlines()
-    with open('2.txt', 'r') as file:
+    with open('2.txt', 'r', encoding='utf-8') as file:
         second_lines = file.readlines()
-    with open('3.txt', 'r') as file:
+    with open('3.txt', 'r', encoding='utf-8') as file:
         third_lines = file.readlines()
     return first_lines, second_lines, third_lines
 
 
 def write_text(sorted_list):
-    with open('4.txt', 'w') as file:
+    with open('4.txt', 'w', encoding='utf-8') as file:
         file.write('\n'.join(sorted_list))
 
 

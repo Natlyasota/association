@@ -1,4 +1,5 @@
 import os
+os.getcwd()
 list_with_files = ['3.txt', '2.txt', '1.txt']
 
 def read_text():
